@@ -1,7 +1,9 @@
 
 import './App.css';
 import HelloWorld from './HelloWorld.jsx';
-import ClickCounter from './ClickCounter';
+import ClickCounter from './ClickCounter.jsx';
+import ToggleText from './ToggleText.jsx';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <h1>React Demos 9/27</h1> 
       <HelloWorld/>
       <ClickCounter/>
+      <ToggleText/>
     </div>
   );
 }

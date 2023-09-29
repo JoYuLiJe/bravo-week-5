@@ -20,12 +20,13 @@ const ClickCounter = () => {
         <>
             <h2>Exercise 2</h2>
             <p>The current count is: {count}</p>
-            <button styles={{color: 'blue'}} onCLick={() => setCount(count + 1)}>Increment the count!</button>
-            <p>Add button thta resets count</p>
+            <button style={{ color: 'blue'}} onClick={() => setCount(count + 1)}>Increment the count!</button>
+            <p>Add button that resets the count</p>
             <button onClick={() => setCount(0)}>Reset counter to zero!</button>
-
-
             
+            {/* <p>{count > 10 ? "BIG" : "SMALL"}</p> */}
+            <p>{count > 10 ? (count > 50 ? "HUGE" : "BIG"): "SMALL"}</p>
+
         </>
 
     )
